@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Snow Border</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="shortcut icon" type="image/png" href="img/LOGO.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-logo">
+      <a href="#"><img class="logo" src="img/LOGO.png" alt="logo"></a>
+      <span class="burger-icon"><img src="img/bar.png" alt="menu burger"></span>
+      <nav class="menu">
+        <a class="menu-item" href="#">snowboards</a>
+        <a class="menu-item" href="#">splitboards</a>
+        <a class="menu-item" href="#">boots</a>
+        <a class="menu-item" href="#">fixations</a>
+        <a class="menu-item" href="#">housses</a>
+        <a class="menu-item" href="#">divers</a>
+      </nav>
+    </div>
+    <div class="icons">
+      <a href="#"><img src="img/search.png" alt="icône de recherche"></a>
+      <a id="profile" href="#"><img src="img/profil.png" alt="icône de profil"></a>
+      <a href="#"><img src="img/cart.png" alt="icône de panier"></a>
+    </div>
+  </header>
+
+  <section id="container">
+    <div class="product-container">
+      <div class="product-image">
+        <img id="product-image" src="" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h1 class="product-title" id="product-title"></h1>
+        <p class="product-price" id="product-price"></p>
+        <div id="variant-colors"></div>
+        <div id="variant-sizes"></div>
+        <div class="quantity-selector">
+          <button id="decrease-btn">-</button>
+          <input id="quantity-input" type="text" value="1" readonly>
+          <button id="increase-btn">+</button>
+        </div>
+        <p class="product-description" id="product-description"></p>
+        <div class="product-buttons">
+          <button id="add-to-cart-button">Ajouter au panier</button>
+          <button id="buy-now-button">Acheter maintenant</button>
+        </div>
+      </div>
+    </div>
+    <h2>Ce qu'ils en pensent</h2>
+    <div id="average-rating" class="average-rating"></div>
+    <div id="comments" class="comments-list"></div>
+  </section>
+
+  <footer>
+    <div class="first-part-footer">
+      <div class="footer-column">
+        <img class="footer-logo" src="img/LOGO-footer.png" alt="Logo du site">
+      </div>
+      <div class="footer-column">
+        <ul class="secondary-menu">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Legal notice</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+      </div>
+      <div class="footer-column">
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2023, Test technique Lugus Powered by Shopify</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

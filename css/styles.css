@@ -1,0 +1,324 @@
+    /* GENERAL */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cabin', sans-serif;
+    }
+
+    /* HEADER */
+
+    header {
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      margin: 0 8%;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .menu-logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .logo {
+      margin-right: 2.4rem;
+    }
+
+    .menu-item {
+      margin-right: 1.5rem;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .icons a img {
+      margin-right: 1.2rem;
+      max-height: 20px;
+    }
+
+    /* MENU BURGER */
+
+    .burger-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    .burger-icon img {
+      max-width: 20px;
+    }
+
+    /* SECTION FICHE PRODUIT */
+
+    .product-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 800px;
+      margin: 5rem auto;
+      padding: 20px;
+    }
+
+    .product-image {
+      flex: 1;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      max-height: 490px;
+    }
+
+    .product-details {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .product-details>* {
+      margin-bottom: 2rem;
+    }
+
+    .product-title {
+      font-family: 'Fjalla One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 38px;
+      text-transform: uppercase;
+    }
+
+    .product-price {
+      font-family: 'Fjalla One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 31px;
+      color: #4374EF;
+    }
+
+    .product-variant {
+      margin-bottom: 10px;
+    }
+
+    #variant-colors label,
+    #variant-sizes label {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      color: #6C6C6C;
+    }
+
+    .color-button,
+    .size-button {
+      color: #4374EF;
+      background-color: white;
+      border: 1px solid #4374EF;
+      border-radius: 37px;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+      padding: 0.5rem 1.3rem;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .color-button.active,
+    .size-button.active {
+      background-color: #4374EF;
+      color: white;
+    }
+
+    .quantity-selector {
+      display: flex;
+      align-items: center;
+      margin-top: 3.5rem;
+    }
+
+    .quantity-selector button {
+      background: #4374EF;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 16px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .quantity-selector input {
+      width: 40px;
+      height: 30px;
+      text-align: center;
+      background-color: #4374EF;
+      color: white;
+      border: none;
+      font-family: 'Fjalla One';
+      font-size: 16px;
+      padding: 0 5px;
+    }
+
+    .quantity-selector button:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .quantity-selector button:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .product-description {
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #525252;
+    }
+
+    .product-buttons {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+    }
+
+    .product-buttons button {
+      padding: 15px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #add-to-cart-button {
+      font-family: 'Roboto', sans-serif;
+      color: #4374EF;
+      font-weight: bold;
+      background-color: white;
+      border: 1px solid #4374EF;
+      border-radius: 3px;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    #buy-now-button {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      font-weight: bold;
+      background-color: #4374EF;
+      border: 1px solid #4374EF;
+      border-radius: 3px;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    /* SECTION AVIS */
+
+    h2 {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 31.42px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .average-rating {
+      text-align: center;
+      color: #4374EF;
+      margin-top: 10px;
+    }
+
+    .comments-list {
+      max-width: 604px;
+      margin: 2rem auto 10rem auto;
+    }
+
+    .comment-wrapper>p:first-child {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 1rem;
+    }
+
+    .comment-wrapper>p:last-child {
+      color: #B5B5B5;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .comment {
+      background-color: #F6F8FC;
+      padding: 1.2rem;
+      margin: 1.2rem;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .comment p {
+      margin: 0;
+    }
+
+    .comment-rating {
+      color: #4374EF;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+
+    footer>.first-part-footer {
+      display: flex;
+      margin: 0 5rem;
+    }
+
+    .footer-column {
+      flex: 1;
+      padding: 30px;
+      color: #333;
+      margin: 2rem;
+    }
+
+    .footer-logo {
+      width: 150px;
+      height: auto;
+    }
+
+    .secondary-menu {
+      list-style: none;
+      padding: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 200%;
+    }
+
+    .secondary-menu li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .copyright p {
+      font-size: 12px;
+      text-align: center;
+    }
